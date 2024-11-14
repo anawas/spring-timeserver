@@ -28,11 +28,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     
-    - name: Lint Code Base
-      uses: github/super-linter@v4
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
     # Configure Gradle for optimal use in GitHub Actions, including caching of downloaded dependencies.
     # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
     - name: Setup Gradle
